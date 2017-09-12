@@ -1,9 +1,29 @@
 @font-face {
-	font-family: 'Futura PT Book';
-	src: url('../fonts/FuturaPT-Book.eot');
-	src: url('../fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/FuturaPT-Book.woff') format('woff'),
-		url('../fonts/FuturaPT-Book.ttf') format('truetype');
+	font-family: 'AA-BebasNeue';
+	src: url('../fonts/AABebasNeue.eot');
+	src: url('../fonts/AABebasNeue.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AABebasNeue.woff') format('woff'),
+		url('../fonts/AABebasNeue.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-Bold';
+	src: url('../fonts/Roboto-Bold.eot');
+	src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto-Bold.woff') format('woff'),
+		url('../fonts/Roboto-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('../fonts/Roboto-Regular.eot');
+	src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto-Regular.woff') format('woff'),
+		url('../fonts/Roboto-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }

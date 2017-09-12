@@ -1,5 +1,10 @@
+$regular: 'Roboto-Regular';
+$bold: 'Roboto-Bold';
+$bebas: 'AA-BebasNeue';
+
+
 body {
-  font-family: 'Futura PT Book', sans-serif;
+  font-family: $regular, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-transform: uppercase;
@@ -22,6 +27,3 @@ a {
   margin: 0 auto;
 }
 
-.hajksd {
-  background: red;
-}
