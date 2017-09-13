@@ -1,0 +1,86 @@
+.top-block {
+  position: relative;
+  background: #191919;
+  color: #fff;
+}
+
+.top-block__container {
+  padding-bottom: 32vw;
+}
+
+.top-block__title {
+  max-width: 440px;
+  width: 100%;
+  padding-top: 338px;
+}
+
+.top-block__descr {
+  max-width: 640px;
+  width: 100%;
+  font-family: $regular;
+  font-size: 24px;
+
+  color: #ffffff;
+  line-height: 1.33;
+}
+
+.top-block__man {
+  z-index: 10;
+
+  position: absolute;
+  right: 3.9%;
+  bottom: 6vw;
+
+  width: 46.1%;
+  height: 40vw;
+  background: url("../images/header-man.png") no-repeat center;
+  background-size: contain;
+}
+
+.top-block__triangle {
+  position: absolute;
+  right: 45.9%;
+  bottom: 415px / 1920px * 100vw;
+
+  width: 5.1%;
+  height: 109px / 1920px * 100vw;
+
+  background: url("../images/header-triangle.png") no-repeat center;
+  background-size: contain;
+}
+
+.top-block__circle {
+  position: absolute;
+  right: 115px / 1920px * 100%;
+  bottom: 998px / 1920px * 100vw;
+
+  width: 4.1%;
+  height: 79px / 1920px * 100vw;
+
+  background: url("../images/header-circle.png") no-repeat center;
+  background-size: contain;
+}
+
+.top-block__wave {
+  position: absolute;
+  right: 654px / 1920px * 100%;
+  bottom: 1000px / 1920px * 100vw;
+
+  width: 7.1%;
+  height: 88px / 1920px * 100vw;
+
+  background: url("../images/header-wave.png") no-repeat center;
+  background-size: contain;
+}
+
+.top-block__ants {
+  position: absolute;
+  right: 247px / 1920px * 100%;
+  bottom: 612px / 1920px * 100vw;
+
+  width: 19.5%;
+  height: 404px /1920px * 100vw;
+
+  background: url("../images/header-ants.png") no-repeat center;
+  background-size: contain;
+}

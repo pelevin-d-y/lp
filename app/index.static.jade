@@ -1,6 +1,6 @@
 doctype html
 head
-  title Sunlight
+  title lp
   meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
   meta(name="viewport" content="width=device-width")
   meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
@@ -23,64 +23,68 @@ body
           | Clients
         a(href="#").main-nav__item
           | Contact
-      .heade__.tel
+      .header__tel
         a(href="tel: 8 800 800 800")
           | 8 800 800 800
   .top-block
     .container.top-block__container
-      .top-block__title
+      h1.top-block__title
         | DESIGN AND WEB DEVELOPMENT STUDIO
       .top-block__descr
-        | The websites made by us are a step ahead of time. We develop the high load ngines and services and increase your online sales.
+        | The websites made by us are a step ahead of time.
+        br
+        | We develop the high load ngines and services and increase your online sales.
       a(href="#").top-block__btn.btn
         | Order Now
     .top-block__man
     .top-block__triangle
     .top-block__circle
     .top-block__wave
-    .top-block__wave
+    .top-block__ants
   .who
+    .who-top-triangle
     .container.who__container
-      .who__wrapper-1
-        .who__card
-          .who__card-woman
-          .who__card-plus
-          .who__card-square
-      .who__wrapper-2
-        .who__title
-          | Who we are
-        .who__desc
-          .who__desc-paragraph
-            | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-          .who__desc-paragraph
-            | Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
-          .who__desc-paragraph
-            | Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-      .who__wave
-      .who__big-circle
-      .who__triangle
-      .who__min-circle
+      .who__card
+        .who__card-woman
+        .who__card-plus
+        .who__card-square
+      h1.who__title
+        | Who we are
+      .who__desc
+        .who__desc-paragraph.paragraph
+          | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+        .who__desc-paragraph.paragraph
+          | Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+        .who__desc-paragraph.paragraph
+          | Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+    .who__wave
+    .who__big-circle
+    .who__triangle
+    .who__min-circle
+    .who__ants
+      .who__ants-container
+    .who-bottom-triangle
   .services
     .container
-      .services__title
+      h1.services__title
         | Services
       .services__items
         .services__item
-          .services__foto
+          .services__foto.services__foto-1
           .services__item-text-container
             .services__item-title
               | Web development
             .services__item-text
               | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
         .services__item
-          .services__foto
+          .services__foto.services__foto-2
           .services__item-text-container
             .services__item-title
               | SEO Promotion
             .services__item-text
               | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
         .services__item
-          .services__foto
+          .services__foto.services__foto-3
           .services__item-text-container
             .services__item-title
               | UI / UX Design
@@ -88,6 +92,77 @@ body
               | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
       a(href="#").services__btn.btn
         | Start
+  .portfolio
+    .portfolio__container
+      h1.portfolio__title
+        | Portfolio
+      .portfolio__items
+        .portfolio__item.portfolio__item-1
+          .portfolio__item-border
+        .portfolio__item.portfolio__item-2
+          .portfolio__item-border
+            .portfolio__item-title
+              | lEVELS MALL
+            .portfolio__item-desk
+              | It is a long established fact that a reader will be distracted by the readable content of a page
+            a(href="#").portfolio__item-btn
+              | See all
+        .portfolio__item.portfolio__item-3
+          .portfolio__item-border
+        .portfolio__item.portfolio__item-4
+          .portfolio__item-border
+            .portfolio__item-logo
+      .portfolio__btn.btn
+        | Order now
+    .portfolio__wave
+    .portfolio__circle
+    .portfolio__circlesquare
+    .portfolio__plus
+    .portfolio__man
+  .clients
+    .container
+      h1.clients__title
+        | Clients
+      .clients__slider
+        .clients__slide
+          .clients__slide-title
+            | Anna
+          .clients__slide-desc
+            .clients__slide-paragraph.paragraph
+              | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+            .clients__slide-paragraph.paragraph
+              | Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+            .clients__slide-paragraph.paragraph
+              | Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+      .clients__slider-arrows
+    .clients__big-circle
+    .clients__min-circle
+    .clients__triangle
+    .clients__wave
+    .clients__ants
+  .contacts
+    .container.contacts__container
+      h1.contacts__title
+        | Contacts
+      form(action="#" method="#").contacts__form#contacts__form
+          .contacts__form-container
+            .form-block
+              input(type="text" name="name" placeholder="Name").contacts__form-input
+            .form-block
+              input(type="tel" name="phone" placeholder="Phone").contacts__form-input
+            .form-block
+              input(type="email" name="email" placeholder="E-mail").popup__form-input
+            .form-block.form-block__textarea
+              textarea(name="fotos__area" placeholder= "Ваше сообщение").popup__form-textarea
+          .popup__btn-wrapper
+            button(type="submit" href="#").btn.contacts__btn-1
+              | Start
+    .contacts__man
+    .contacts__plus
+    .contacts__wave
+    .contacts__ants
+    .contacts__square
+    .contacts__triangle
   script(src="javascripts/vendor.js")
   script(src="javascripts/app.js")
 

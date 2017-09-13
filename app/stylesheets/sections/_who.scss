@@ -1,0 +1,200 @@
+.who {
+  position: relative;
+
+  min-height: 622px;
+
+  padding-top: 170px;
+
+  //margin-bottom: -20px;
+}
+
+.who__container {
+  padding-left: 614px / 1920px * 100%;
+}
+
+.who-top-triangle {
+  position: absolute;
+  top: -19vw;
+
+  width: 100%;
+  height: 19vw;
+
+  background: url('../images/who-top-triangle.svg') no-repeat bottom;
+  background-size: cover;
+
+  z-index: 10;
+}
+
+.who__title {
+  max-width: 160px;
+}
+
+.who__desc {
+  max-width: 494px;
+  width: 100%;
+
+  font-size: 14px;
+  line-height: 1.57;
+  color: #000000;
+}
+
+.paragraph {
+  margin-bottom: 25px;
+}
+
+.paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.who__card {
+  z-index: 11;
+
+  position: absolute;
+  left: 0;
+
+  overflow: hidden;
+
+  width: 488px / 1920px * 100vw;
+  height: 689px / 1920px * 100vw;
+
+  background: #191919;
+}
+
+.who__card-woman {
+  z-index: 10;
+
+  position: absolute;
+  bottom: -120px / 1920px * 100vw;
+  left: -180px / 1920px * 100vw;
+
+  width: 529px / 488px * 100%;
+  height: 538px / 1920px * 100vw;
+
+  background: url('../images/who-woman.png') no-repeat center;
+  background-size: contain;
+}
+
+.who__card-plus {
+  position: absolute;
+  left: -25px;
+
+
+  width: 755px / 488px * 100%;
+  height: 889px / 1920px * 100vw;
+
+  background: url("../images/who-plus.png") no-repeat center;
+  background-size: contain;
+}
+
+.who__card-square {
+  position: absolute;
+  left: 166px / 488px * 100%;
+  top: 81px / 1920px * 100vw;
+
+
+  width: 66px / 488px * 100%;
+  height: 66px / 1920px * 100vw;
+
+  background: url("../images/who-square.png") no-repeat center;
+  background-size: contain;
+}
+
+.who-bottom-triangle {
+  position: absolute;
+  bottom: -19vw;;
+
+  width: 100%;
+  height: 19vw;
+
+  background: url('../images/who-bottom-triangle.svg') no-repeat;
+  background-size: cover;
+
+  transform: rotate(180deg);
+
+  z-index: 10;
+}
+
+.who__wave {
+  position: absolute;
+  top: -20px / 1920px * 100vw;
+  left: 712px / 1920px * 100vw;
+
+  width: 137px / 1920px * 100vw;
+  height: 63px / 1920px * 100vw;
+
+  background: url('../images/who-wave.png') no-repeat center;
+  background-size: contain;
+
+  z-index: 11;
+}
+
+.who__big-circle {
+  position: absolute;
+  top: 281px / 1920px * 100vw;
+  left: 209px / 1920px * 100vw;
+
+  width: 233px / 1920px * 100vw;
+  height: 233px / 1920px * 100vw;
+
+  background: url('../images/who-big-circle.png') no-repeat center;
+  background-size: contain;
+
+  z-index: 10;
+}
+
+.who__triangle {
+   position: absolute;
+  top: 459px / 1920px * 100vw;
+  right: 189px / 1920px * 100vw;
+
+  width: 116.5px / 1920px * 100vw;
+  height: 128.3px / 1920px * 100vw;
+
+  background: url('../images/who-triangle.png') no-repeat center;
+  background-size: contain;
+
+  z-index: 10;
+}
+
+.who__min-circle {
+  position: absolute;
+  top: 728px / 1920px * 100vw;
+  right: 271px / 1920px * 100vw;
+
+  width: 51px / 1920px * 100vw;
+  height: 51px / 1920px * 100vw;
+
+  background: url('../images/who-min-circle.png') no-repeat center;
+  background-size: contain;
+
+  z-index: 11;
+}
+
+.who__ants {
+  position: absolute;
+  top: -260px / 1920px * 100vw;
+  right: 244px / 1920px * 100vw;
+
+  width: 399px / 1920px * 100vw;
+  height: 347px / 1920px * 100vw;
+
+  //background: url('../images/who-ants.png') no-repeat center;
+  //background-size: contain;
+  transform: rotate(-10deg);
+
+
+  z-index: 11;
+  overflow: hidden;
+}
+
+.who__ants-container {
+  position: absolute;
+  top: -80px;
+  transform: rotate(10deg);
+
+  width: 399px / 1920px * 100vw;
+  height: 347px / 1920px * 100vw;
+
+  background: url('../images/who-ants.png') no-repeat center;
+  background-size: contain;
+}
