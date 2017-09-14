@@ -118,3 +118,48 @@
   background: url('../images/services-wave.png') no-repeat;
   background-size: contain;
 }
+
+@media (max-width: 1024px) {
+  .services__title {
+    margin-bottom: 0;
+  }
+
+  .services__items {
+    justify-content: space-around;
+    margin-top: 80px;
+  }
+
+  .services__item {
+    margin-bottom: 40px;
+  }
+
+  .services__foto {
+    width: 251px;
+    height: 251px;
+    background-size: contain;
+    margin-bottom: 0;
+  }
+
+  .services__item-title {
+    margin-bottom: 0;
+  }
+
+  .services__btn {
+    margin-top: 60px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .services__triangle {
+    display: none;
+  }
+
+  .services__ants {
+    display: none;
+  }
+
+  .services__wave {
+    display: none;
+  }
+}

@@ -1,5 +1,7 @@
 import $ from "jquery"
-import owl from "owl.carousel"
+import "owl.carousel"
+
+
 
 $(document).ready(function() {
   console.log('sdaasd');

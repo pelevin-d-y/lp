@@ -42,6 +42,7 @@ body
   .who
     .who-top-triangle
     .container.who__container
+      .who__big-circle
       .who__card
         .who__card-woman
         .who__card-plus
@@ -56,7 +57,6 @@ body
         .who__desc-paragraph.paragraph
           | Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
     .who__wave
-    .who__big-circle
     .who__triangle
     .who__min-circle
     .who__ants
@@ -115,7 +115,7 @@ body
         a(href="#").portfolio__item.portfolio__item-4
           .portfolio__item-border
             .portfolio__item-logo
-      .portfolio__btn.btn
+      a(href="#").portfolio__btn.btn
         | Order now
       .portfolio__wave
       .portfolio__circle
@@ -174,14 +174,15 @@ body
       h1.contacts__title
         | Contacts
       form(action="#" method="#").contacts__form#contacts__form
-          .contacts__form-container
-            input(type="text" name="name" placeholder="Name").contacts__form-input
-            input(type="tel" name="phone" placeholder="Phone").contacts__form-input
-            input(type="email" name="email" placeholder="E-mail").contacts__form-input
-            textarea(name="fotos__area" placeholder= "Ваше сообщение").popup__form-textarea
-          .popup__btn-wrapper
-            button(type="submit" href="#").btn.contacts__btn-1
-              | Start
+        .contacts__form-container
+          input(type="text" name="name" placeholder="Name").contacts__form-input
+          input(type="tel" name="phone" placeholder="Phone").contacts__form-input
+          input(type="email" name="email" placeholder="E-mail").contacts__form-input
+          textarea(name="fotos__area" placeholder= "Ваше сообщение").popup__form-textarea
+          button(type="submit" href="#").btn.contacts__btn
+            | Start
+      .contacts__copyright
+        | © codestory 2017
     .contacts__man
     .contacts__plus
     .contacts__wave

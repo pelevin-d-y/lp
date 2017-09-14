@@ -34,4 +34,20 @@ h1 {
   font-size: 60px;
   line-height: 1.17;
   letter-spacing: 3px;
+
+  font-weight: normal;
+}
+
+input {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
 }

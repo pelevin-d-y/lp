@@ -129,8 +129,8 @@
 
 .who__big-circle {
   position: absolute;
-  top: 281px / 1920px * 100vw;
-  left: 209px / 1920px * 100vw;
+  top: 151px / 1920px * 100vw;
+  left: -112px / 1920px * 100vw;
 
   width: 233px / 1920px * 100vw;
   height: 233px / 1920px * 100vw;
@@ -196,4 +196,34 @@
 
   background: url('../images/who-ants.png') no-repeat center;
   background-size: contain;
+}
+
+@media (max-width: 1446px) {
+  .who__container {
+    padding-left: 40%;
+  }
+
+  .who__card {
+    left: 124px / 1920px * 100vw;
+  }
+
+  .who__big-circle {
+    left: 10px / 1920px * 100vw;
+  }
+
+  @media (max-width: 768px) {
+    .who {
+      min-height: auto;
+      padding-top: 30px;
+    }
+
+    .who__triangle {
+      display: none;
+    }
+
+    .who__min-circle {
+      display: none;
+    }
+  }
+
 }

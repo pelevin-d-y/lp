@@ -11,7 +11,7 @@
 .top-block__title {
   max-width: 440px;
   width: 100%;
-  padding-top: 338px;
+  padding-top: 338px / 1920px * 100%;
 }
 
 .top-block__descr {
@@ -83,4 +83,26 @@
 
   background: url("../images/header-ants.png") no-repeat center;
   background-size: contain;
+}
+
+
+@media(max-width: 1024px) {
+  .top-block__wave {
+    display: none;
+  }
+}
+
+@media(max-width: 768px) {
+  .top-block__container {
+    padding-bottom: 48vw;
+  }
+
+  .top-block__descr {
+    font-size: 18px;
+  }
+
+  .top-block__ants {
+    display: none;
+  }
+
 }
