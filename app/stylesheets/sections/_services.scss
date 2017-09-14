@@ -1,4 +1,6 @@
 .services {
+  position: relative;
+
   min-height: 600px;
   padding-top: 20vw;
   padding-bottom: 100px;
@@ -24,6 +26,10 @@
 }
 
 .services__foto {
+  z-index: 10;
+
+  position: relative;
+
   width: 291px;
   height: 291px;
   margin: 0 auto;
@@ -64,4 +70,51 @@
   display: block;
   margin: 0 auto;
   margin-top: 118px;
+}
+
+.services__bottom-triangle {
+  position: absolute;
+  bottom: -18.8vw;
+
+  width: 100%;
+  height: 19vw;
+
+  background: url('../images/services-bottom-triangle.svg') no-repeat;
+  background-size: cover;
+
+  transform: rotate(180deg);
+
+  z-index: 10;
+}
+
+.services__ants {
+  position: absolute;
+  top: 100px;
+  left: -41px;
+  width: 395px / 1920px * 100vw;
+  height: 346px / 1920px * 100vw;;
+  background: url('../images/services-ants.png') no-repeat;
+  background-size: contain;
+}
+
+.services__triangle {
+  position: absolute;
+  top: 185px;
+  right: 216px;
+  width: 127.1px / 1920px * 100vw;
+  height: 118.9px / 1920px * 100vw;;
+  background: url('../images/services-triangle.png') no-repeat;
+  background-size: contain;
+}
+
+.services__wave {
+  z-index: 11;
+
+  position: absolute;
+  right: 252px / 1920px * 100%;
+  bottom: -50px  / 1920px * 100vw;
+  width: 117px / 1920px * 100vw;
+  height: 105px / 1920px * 100vw;
+  background: url('../images/services-wave.png') no-repeat;
+  background-size: contain;
 }
