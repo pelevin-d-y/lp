@@ -1,10 +1,9 @@
 import $ from "jquery"
-import slick from 'slick-carousel'
+import owl from "owl.carousel"
 
-$(document).ready(function(){
-  $('.clients__slider').slick({
-  })
-})
+$(document).ready(function() {
+  console.log('sdaasd');
+});
 
 
 /*(function () {

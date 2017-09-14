@@ -4,8 +4,6 @@ head
   meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
   meta(name="viewport" content="width=device-width")
   meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
-  link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css")
-  link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css")
   link(rel="stylesheet" href="stylesheets/app.css")
 body
   header.header
@@ -130,7 +128,7 @@ body
     .container
       h1.clients__title
         | Clients
-      .clients__slider
+      .clients__slider.owl-carousel
         .clients__slide
           .clients__slide-foto.clients__slide-foto-1
           .clients__slide-title
@@ -171,19 +169,16 @@ body
     .clients__wave
     .clients__ants
   .contacts
+    .contacts-top-triangle
     .container.contacts__container
       h1.contacts__title
         | Contacts
       form(action="#" method="#").contacts__form#contacts__form
           .contacts__form-container
-            .form-block
-              input(type="text" name="name" placeholder="Name").contacts__form-input
-            .form-block
-              input(type="tel" name="phone" placeholder="Phone").contacts__form-input
-            .form-block
-              input(type="email" name="email" placeholder="E-mail").popup__form-input
-            .form-block.form-block__textarea
-              textarea(name="fotos__area" placeholder= "Ваше сообщение").popup__form-textarea
+            input(type="text" name="name" placeholder="Name").contacts__form-input
+            input(type="tel" name="phone" placeholder="Phone").contacts__form-input
+            input(type="email" name="email" placeholder="E-mail").contacts__form-input
+            textarea(name="fotos__area" placeholder= "Ваше сообщение").popup__form-textarea
           .popup__btn-wrapper
             button(type="submit" href="#").btn.contacts__btn-1
               | Start
