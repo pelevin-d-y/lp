@@ -8,6 +8,10 @@
   background: #fff;
 }
 
+.clients__container {
+  position: relative;
+}
+
 .clients-top-triangle {
   position: absolute;
   top: -18.8vw;
@@ -135,8 +139,6 @@
   width: 353px / 1920px * 100vw;
   height: 353px  / 1920px * 100vw;
   transform: rotate(10.3deg);
-
-
 }
 
 .clients__big-circle-container {
@@ -155,6 +157,35 @@
   display: block;
   margin: 0 auto;
   margin-top: 100px;
+}
+
+.clients-btn-prev {
+  position: absolute;
+  top: 390px;
+  left: -10px;
+
+  width: 29px;
+  height: 61px;
+
+  background: url('../images/arrow-prev.png') no-repeat center;
+
+  cursor: pointer;
+  border: none;
+}
+
+.clients-btn-next {
+  position: absolute;
+  top: 390px;
+  right: 50px;
+
+  width: 29px;
+  height: 61px;
+
+  background: url('../images/arrow-next.png') no-repeat center;
+  background-size: contain;
+
+  cursor: pointer;
+  border: none;
 }
 
 

@@ -5,11 +5,14 @@ $(document).ready(function() {
   $('.clients__slider').slick({
     infinite: true,
     slidesToShow: 1,
-    arrows: false,
     useTransform: true,
     fade: true,
     speed: 600,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    appendArrows: $('.clients__slider-arrows'),
+    prevArrow: '<button id="prev" type="button" class="clients-btn-prev"></button>',
+    nextArrow: '<button id="next" type="button" class="clients-btn-next"></button>'
+
   })
 
   $('.clients__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
