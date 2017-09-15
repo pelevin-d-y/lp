@@ -34,7 +34,7 @@ body
         | The websites made by us are a step ahead of time.
         br
         | We develop the high load ngines and services and increase your online sales.
-      a(href="#").top-block__btn.btn
+      a(href="#").top-block__btn.btn.hvr-radial-out
         | Order Now
     .top-block__man
     .top-block__triangle
@@ -90,7 +90,7 @@ body
               | UI / UX Design
             .services__item-text
               | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-      a(href="#").services__btn.btn
+      a(href="#").services__btn.btn.hvr-radial-out
         | Start
       .services__ants
       .services__triangle
@@ -117,7 +117,7 @@ body
         a(href="#").portfolio__item.portfolio__item-4
           .portfolio__item-border
             .portfolio__item-logo
-      a(href="#").portfolio__btn.btn
+      a(href="#").portfolio__btn.btn.hvr-radial-out
         | Order now
       .portfolio__wave
       .portfolio__circle
@@ -165,7 +165,10 @@ body
             .clients__slide-paragraph.paragraph
               | Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
       .clients__slider-arrows
+      a(href="#").clients__btn.btn.hvr-radial-out
+        | Order now
     .clients__big-circle
+      .clients__big-circle-container
     .clients__min-circle
     .clients__triangle
     .clients__wave
@@ -181,7 +184,7 @@ body
           input(type="tel" name="phone" placeholder="Phone").contacts__form-input
           input(type="email" name="email" placeholder="E-mail").contacts__form-input
           textarea(name="fotos__area" placeholder= "Ваше сообщение").popup__form-textarea
-          button(type="submit" href="#").btn.contacts__btn
+          button(type="submit" href="#").btn.contacts__btn.hvr-radial-out
             | Start
       .contacts__copyright
         | © codestory 2017
@@ -191,6 +194,21 @@ body
     .contacts__ants
     .contacts__square
     .contacts__triangle
+  .popup
+    .overlay
+      .popup-container
+        .popup__btn.hvr-radial-out
+          .popup__btn-line-1
+          .popup__btn-line-2
+        .popup__title
+          | thanks! cheers!
+        .popup__descr
+          | We will get back to you as soon as possible...
+        .popup__man
+        .popup__ants
+        .popup__circle
+          .popup__plus
+        .popup__triangle
   script(src="javascripts/vendor.js")
   script(src="javascripts/app.js")
 

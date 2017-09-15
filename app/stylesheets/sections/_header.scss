@@ -32,6 +32,8 @@
   font-size: 16px;
   color: #fff;
 
+  transition: color 0.3s;
+
   &:hover {
     color: #00dbce;
   }
@@ -43,7 +45,7 @@
 }
 
 .header__tel a {
-  color: #fff; 
+  color: #fff;
   font-size: 18px;
 }
 

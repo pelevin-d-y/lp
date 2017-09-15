@@ -3,7 +3,7 @@
   position: relative;
 
   padding-top: 45px;
-  padding-bottom: 33vw;
+  padding-bottom: 23vw;
 
   background: #fff;
 }
@@ -74,8 +74,88 @@
   height: 204px;
   border-radius: 50%;
   background: url("../images/slider-foto.png") no-repeat center;
+  background-size: contain;
 }
 
+.clients__ants {
+  position: absolute;
+  left: 250px / 1920px * 100vw;
+  bottom: 0;
+
+  width: 395px / 1920px * 100vw;
+  height: 346px / 1920px * 100vw;
+  background: url("../images/clients-ants.png") no-repeat center;
+  background-size: contain;
+}
+
+.clients__wave {
+  position: absolute;
+  right: 195px / 1920px * 100vw;
+  bottom: 480px / 1920px * 100vw;
+
+  width: 97px / 1920px * 100vw;
+  height: 127px  / 1920px * 100vw;
+  background: url("../images/clients-wave.png") no-repeat center;
+  background-size: contain;
+}
+
+.clients__triangle {
+  position: absolute;
+  left: 273px / 1920px * 100vw;
+  bottom: 418px / 1920px * 100vw;
+
+  width: 74.8px / 1920px * 100vw;
+  height: 71.9px  / 1920px * 100vw;
+  background: url("../images/clients-triangle.png") no-repeat center;
+  background-size: contain;
+}
+
+.clients__min-circle {
+  z-index: 20;
+
+  position: absolute;
+  left: 683px / 1920px * 100vw;
+  top: -71px / 1920px * 100vw;
+
+  width: 71px / 1920px * 100vw;
+  height: 71px  / 1920px * 100vw;
+  background: url("../images/clients-min-circle.png") no-repeat center;
+  background-size: contain;
+}
+
+.clients__big-circle {
+  z-index: 20;
+
+  overflow: hidden;
+
+  position: absolute;
+  right: 465px / 1920px * 100vw;
+  top: -120.5px / 1920px * 100vw;
+
+  width: 353px / 1920px * 100vw;
+  height: 353px  / 1920px * 100vw;
+  transform: rotate(10.3deg);
+
+
+}
+
+.clients__big-circle-container {
+  position: absolute;
+  top: -170px;
+
+  width: 353px / 1920px * 100vw;
+  height: 353px  / 1920px * 100vw;
+  transform: rotate(-10.2deg);
+
+  background: url("../images/clients-big-circle.png") no-repeat center;
+  background-size: contain;
+}
+
+.clients__btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+}
 
 
 .slick-list {

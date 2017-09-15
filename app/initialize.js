@@ -39,11 +39,34 @@ $(document).ready(function() {
       $(nextSlideElement).css({'animation-name': 'move-prev'});
       $(currentSlideElement).css({'animation-name': ''});
     }
-  })
+  });
 
+
+
+  $('.portfolio__item').each(function() {
+    $(this).on('mouseover', function() {
+      $(this).css('background-size', '100%');
+
+      $(this).css('border-color', 'rgba(255, 255, 255, 1)');
+    });
+
+    $(this).on('mouseout', function() {
+      $(this).css('background-size', '110%');
+      $(this).css('border-color', 'rgba(255, 255, 255, 0)');
+    });
+  });
+
+  $('.popup__btn').on('click', function() {
+    $('.popup').addClass('hidden');
+  })
 });
 
-
+$('.overlay').click(function(evt) {
+  if ($(evt.target).closest('.popup-container').length == 0) {
+    $('.popup').addClass('hidden');
+    $('html,body').css('overflow','auto');
+  }
+});
 
 
 /*(function () {
