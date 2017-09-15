@@ -22,17 +22,18 @@ $(document).ready(function() {
 
     console.log(currentSlide);
     console.log(lastSlide);
-    console.log(nextSlide == lastSlide);
+    console.log(currentSlide !== lastSlide);
 
-    if (nextSlide > currentSlide){
+
+    if (nextSlide == 0 && currentSlide !== 1) {
       $(nextSlideElement).css({'animation-name': 'move-next'});
       $(currentSlideElement).css({'animation-name': ''});
-    } else if (nextSlide == 0 && currentSlide !== 1) {
-      $(nextSlideElement).css({'animation-name': 'move-next'});
-      $(currentSlideElement).css({'animation-name': ''});
-    } else if (nextSlide == 0 && currentSlide == lastSlide) {
+    } else if (nextSlide == lastSlide && currentSlide == 0) {
       console.log("центр");
       $(nextSlideElement).css({'animation-name': 'move-prev'});
+      $(currentSlideElement).css({'animation-name': ''});
+    } else if (nextSlide > currentSlide && currentSlide !== lastSlide){
+      $(nextSlideElement).css({'animation-name': 'move-next'});
       $(currentSlideElement).css({'animation-name': ''});
     } else {
       $(nextSlideElement).css({'animation-name': 'move-prev'});
@@ -41,6 +42,8 @@ $(document).ready(function() {
   })
 
 });
+
+
 
 
 /*(function () {
