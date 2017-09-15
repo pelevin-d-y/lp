@@ -3,6 +3,8 @@
   position: relative;
 
   padding-top: 45px;
+  padding-bottom: 33vw;
+
   background: #fff;
 }
 
@@ -41,7 +43,7 @@
 
   background: #efefef;
 
-  opacity: 0;
+  opacity: 1;
 }
 
 .clients__slide-title {
@@ -78,8 +80,33 @@
   overflow: visible;
 }
 
-.slick-active {
+.clients__slide {
   opacity: 1;
+  transform: translateX(300px) rotateY(70deg);
 }
 
+.slick-active {
+  //transform: translateX(300px) translateY(60px);
+  animation-name: rotate, move;
+  animation-duration: 1s, 1s;
+  animation-fill-mode: forwards;
+}
 
+@keyframes rotate {
+  0% {
+      opacity: 0;
+    }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes move {
+  0% {
+   transform: translateX(300px) rotateY(70deg);
+
+    }
+  100% {
+    transform: translateX(0) rotateY(0);
+  }
+}

@@ -1,10 +1,18 @@
 import $ from "jquery"
-import "owl.carousel"
-
-
+import slick from "slick-carousel"
 
 $(document).ready(function() {
-  console.log('sdaasd');
+  $('.clients__slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    arrows: false,
+    useTransform: true,
+    fade: true,
+    speed: 600,
+    cssEase: 'linear'
+  })
+
+
 });
 
 
