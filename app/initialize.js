@@ -12,6 +12,33 @@ $(document).ready(function() {
     cssEase: 'linear'
   })
 
+  $('.clients__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+
+
+    var nextSlideElement = $('.clients__slide')[nextSlide];
+    var currentSlideElement = $('.clients__slide')[currentSlide];
+
+    var lastSlide = $('.clients__slider').slick("getSlick").slideCount - 1;
+
+    console.log(currentSlide);
+    console.log(lastSlide);
+    console.log(nextSlide == lastSlide);
+
+    if (nextSlide > currentSlide){
+      $(nextSlideElement).css({'animation-name': 'move-next'});
+      $(currentSlideElement).css({'animation-name': ''});
+    } else if (nextSlide == 0 && currentSlide !== 1) {
+      $(nextSlideElement).css({'animation-name': 'move-next'});
+      $(currentSlideElement).css({'animation-name': ''});
+    } else if (nextSlide == 0 && currentSlide == lastSlide) {
+      console.log("центр");
+      $(nextSlideElement).css({'animation-name': 'move-prev'});
+      $(currentSlideElement).css({'animation-name': ''});
+    } else {
+      $(nextSlideElement).css({'animation-name': 'move-prev'});
+      $(currentSlideElement).css({'animation-name': ''});
+    }
+  })
 
 });
 

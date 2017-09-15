@@ -76,21 +76,30 @@
   background: url("../images/slider-foto.png") no-repeat center;
 }
 
+
+
 .slick-list {
   overflow: visible;
 }
 
 .clients__slide {
   opacity: 1;
-  transform: translateX(300px) rotateY(70deg);
 }
 
 .slick-active {
-  //transform: translateX(300px) translateY(60px);
-  animation-name: rotate, move;
   animation-duration: 1s, 1s;
   animation-fill-mode: forwards;
 }
+
+.slide-prev {
+  transform: translateX(-300px) rotateY(-70deg);
+}
+
+.slide-next {
+  transform: translateX(300px) rotateY(70deg);
+}
+
+
 
 @keyframes rotate {
   0% {
@@ -101,9 +110,19 @@
   }
 }
 
-@keyframes move {
+@keyframes move-next {
   0% {
    transform: translateX(300px) rotateY(70deg);
+
+    }
+  100% {
+    transform: translateX(0) rotateY(0);
+  }
+}
+
+@keyframes move-prev {
+  0% {
+   transform: translateX(-300px) rotateY(-70deg);
 
     }
   100% {
