@@ -74,6 +74,7 @@ body
         .services__item
           .services__foto.services__foto-1
           .services__item-text-container
+            .services__item-text-animated
             .services__item-title
               | Web development
             .services__item-text
@@ -81,6 +82,7 @@ body
         .services__item
           .services__foto.services__foto-2
           .services__item-text-container
+            .services__item-text-animated
             .services__item-title
               | SEO Promotion
             .services__item-text
@@ -88,6 +90,7 @@ body
         .services__item
           .services__foto.services__foto-3
           .services__item-text-container
+            .services__item-text-animated
             .services__item-title
               | UI / UX Design
             .services__item-text
@@ -177,25 +180,30 @@ body
     .clients__ants
   .contacts
     .contacts-top-triangle
-    .container.contacts__container
-      h1.contacts__title
-        | Contacts
-      form(action="#" method="#").contacts__form#contacts__form
-        .contacts__form-container
-          input(type="text" name="name" placeholder="Name").contacts__form-input
-          input(type="tel" name="phone" placeholder="Phone").contacts__form-input
-          input(type="email" name="email" placeholder="E-mail").contacts__form-input
-          textarea(name="fotos__area" placeholder= "Ваше сообщение").popup__form-textarea
-          button(type="submit" href="#").btn.contacts__btn.hvr-radial-out
-            | Start
-      .contacts__copyright
-        | © codestory 2017
-    .contacts__man
-    .contacts__plus
-    .contacts__wave
-    .contacts__ants
-    .contacts__square
-    .contacts__triangle
+    .contacts-man-container
+      .container.contacts__container
+        h1.contacts__title
+          | Contacts
+        form(action="#" method="#").contacts__form#contacts__form
+          .contacts__form-container
+            .contacts__form-input-container
+              input(type="text" name="name" placeholder="Name").contacts__form-input
+            .contacts__form-input-container
+              input(type="tel" name="phone" placeholder="Phone").contacts__form-input
+            .contacts__form-input-container
+              input(type="email" name="email" placeholder="E-mail").contacts__form-input
+            .contacts__form-textarea-container
+              textarea(name="fotos__area" placeholder= "Ваше сообщение").contacts__form-textarea
+            button(type="submit" href="#").btn.contacts__btn.hvr-radial-out
+              | Start
+        .contacts__copyright
+          | © codestory 2017
+      .contacts__man
+      .contacts__plus
+      .contacts__wave
+      .contacts__ants
+      .contacts__square
+      .contacts__triangle
   .popup.hidden
     .overlay
       .popup-container
@@ -211,8 +219,8 @@ body
         .popup__circle
           .popup__plus
         .popup__triangle
-  script(src="javascripts/vendor.js")
-  script(src="javascripts/app.js")
+script(src="javascripts/vendor.js")
+script(src="javascripts/app.js")
 
-  script.
-    require('initialize');
+script.
+  require('initialize');

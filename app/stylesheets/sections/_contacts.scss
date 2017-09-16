@@ -1,9 +1,8 @@
 .contacts {
+
   z-index: 30;
 
   position: relative;
-
-  padding-bottom: 50px / 1920px * 100vw;
 
   position: relative;
   background: #191919;
@@ -40,10 +39,21 @@
   justify-content: space-between;
 }
 
+.contacts__form-input-container {
+   display: block;
+
+  width: 250px / 778px *100%;
+  height: 40px;
+
+  color: #fff;
+
+  background: none;
+}
+
 .contacts__form-input {
   display: block;
 
-  width: 250px / 778px *100%;
+  width: 100%;
   height: 40px;
   padding-left: 25px;
 
@@ -57,7 +67,12 @@
   border-color:  #44d8ff;
 }
 
-.popup__form-textarea {
+.contacts__form-textarea-container {
+  width: 100%;
+  height: 240px;
+}
+
+.contacts__form-textarea {
   width: 100%;
   height: 240px;
   margin-top: 22px;
@@ -90,6 +105,7 @@
 
 .contacts__copyright {
   margin-top: 330px / 1920px * 100vw;
+  padding-bottom: 50px / 1920px * 100vw;
 
   font-size: 14px;
   line-height: 1.71;
@@ -98,11 +114,16 @@
   text-align: center;
 }
 
+.contacts-man-container {
+  position: relative;
+  overflow: hidden;
+}
+
 .contacts__man {
   z-index: 20;
 
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 123px / 1920px * 100vw;
 
   width: 963px / 1920px * 100vw;
@@ -110,6 +131,10 @@
 
   background: url("../images/contacts-man.png") no-repeat center;
   background-size: contain;
+
+  transform: translate3d(0, 100%, 0);
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
 }
 
 .contacts__plus {
@@ -122,6 +147,10 @@
 
   background: url("../images/contacts-plus.png") no-repeat center;
   background-size: contain;
+
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
 }
 
 
@@ -135,6 +164,10 @@
 
   background: url("../images/contacts-wave.png") no-repeat center;
   background-size: contain;
+
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
 }
 
 .contacts__triangle {
@@ -147,6 +180,10 @@
 
   background: url("../images/contacts-triangle.png") no-repeat center;
   background-size: contain;
+
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
 }
 
 .contacts__ants {
@@ -159,6 +196,10 @@
 
   background: url("../images/contacts-ants.png") no-repeat center;
   background-size: contain;
+
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
 }
 
 .contacts__square {
@@ -173,9 +214,39 @@
   background-size: contain;
 
   z-index: 20;
+
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
+}
+
+.error {
+  border-color: #f24841;
+}
+label.error {
+  color: #f24841;
+}
+
+label#fotos__area-error {
+  display: block;
+  text-align: center;
+}
+
+.valid {
+  border-color: #52e16c;
 }
 
 @media (max-width: 640px) {
+  label.error {
+    left: 0;
+    position: absolute;
+    bottom: -17px;
+  }
+
+  label#fotos__area-error {
+     bottom: -39px;
+  }
+
   .contacts {
     padding-top: 40px;
     padding-bottom: 80px;
@@ -187,6 +258,16 @@
 
   .contacts__title {
     margin-bottom: 50px;
+  }
+
+  .contacts__form-input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contacts__form-textarea-container {
+    position: relative;
   }
 
   .contacts__form-input {

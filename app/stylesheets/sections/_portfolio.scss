@@ -34,7 +34,9 @@
 
   margin-bottom: 20px / 1920px * 100vw;
 
-
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 
   transition: 0.5s;
 }
@@ -47,6 +49,8 @@
   border-width: 1px;
   border-style: solid;
   border-color: rgba(255, 255, 255, 0);
+
+  transition: border-color 0.5s;
 }
 
 .portfolio__item:hover .portfolio__item-border {
@@ -179,6 +183,11 @@
   background-size: contain;
 
   z-index: 11;
+
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+  transform: translate3d(0, 100%, 0);
 }
 
 .portfolio__plus {
@@ -191,6 +200,10 @@
 
   background: url(../images/portfolio-plus.png) no-repeat bottom;
   background-size: contain;
+
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }
 
 .portfolio__square {
@@ -205,6 +218,10 @@
   background-size: contain;
 
   z-index: 10;
+
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }
 
 .portfolio__circle {

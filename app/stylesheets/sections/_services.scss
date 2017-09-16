@@ -35,6 +35,10 @@
   margin: 0 auto;
 
   margin-bottom: 60px;
+
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .services__foto-1 {
@@ -49,6 +53,18 @@
   background: url("../images/services-item-3.png") no-repeat center;
 }
 
+.services__item-text-animated {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  transition: height 1s;
+
+  background: #efefef;
+}
+
 .services__item-title {
   margin-bottom: 10px;
 
@@ -58,6 +74,10 @@
   font-size: 30px;
   line-height: 2.67;
   letter-spacing: 1.5px;
+}
+
+.services__item-text-container {
+  position: relative;
 }
 
 .services__item-text {
@@ -95,6 +115,10 @@
   height: 346px / 1920px * 100vw;;
   background: url('../images/services-ants.png') no-repeat;
   background-size: contain;
+
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
 }
 
 .services__triangle {
@@ -105,6 +129,10 @@
   height: 118.9px / 1920px * 100vw;;
   background: url('../images/services-triangle.png') no-repeat;
   background-size: contain;
+
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
 }
 
 .services__wave {
@@ -117,6 +145,10 @@
   height: 105px / 1920px * 100vw;
   background: url('../images/services-wave.png') no-repeat;
   background-size: contain;
+
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
 }
 
 @media (max-width: 1024px) {

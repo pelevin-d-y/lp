@@ -13,9 +13,6 @@
   max-width: 684px;
 }
 
-
-
-
 .top-block__title {
   max-width: 440px;
   width: 100%;
@@ -28,7 +25,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  transition: height 1s;
+  transition: height 2s;
   background: #191919;
 }
 
@@ -53,6 +50,11 @@
   right: 3.9%;
   bottom: 6vw;
 
+  opacity: 0;
+
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
+
   width: 46.1%;
   height: 40vw;
   background: url("../images/header-man.png") no-repeat center;
@@ -69,6 +71,10 @@
 
   background: url("../images/header-triangle.png") no-repeat center;
   background-size: contain;
+
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
 }
 
 .top-block__circle {
@@ -81,6 +87,10 @@
 
   background: url("../images/header-circle.png") no-repeat center;
   background-size: contain;
+
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
 }
 
 .top-block__wave {
@@ -93,6 +103,10 @@
 
   background: url("../images/header-wave.png") no-repeat center;
   background-size: contain;
+
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
 }
 
 .top-block__ants {
@@ -105,6 +119,10 @@
 
   background: url("../images/header-ants.png") no-repeat center;
   background-size: contain;
+
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
 }
 
 
