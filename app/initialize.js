@@ -1,8 +1,6 @@
 import $ from "jquery"
 import slick from "slick-carousel"
 import validation from "jquery-validation"
-import scroolly from "jquery.scroolly"
-
 
 $(document).ready(function() {
   $('.clients__slider').slick({
@@ -64,14 +62,23 @@ $(document).ready(function() {
 
   $('.popup__btn').on('click', function() {
     $('.popup').addClass('hidden');
-  })
-});
+  });
 
-$('.overlay').click(function(evt) {
+  $('.overlay').click(function(evt) {
   if ($(evt.target).closest('.popup-container').length == 0) {
-    $('.popup').addClass('hidden');
-    $('html,body').css('overflow','auto');
-  }
+      $('.popup').addClass('hidden');
+      $('html,body').css('overflow','auto');
+    }
+  });
+
+
+
+  $('.top-block__container-animate').scroolly([{
+    from: 'doc-top',
+    css: {
+      height: 0
+    }
+  }])
 });
 
 
