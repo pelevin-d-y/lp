@@ -129,7 +129,7 @@
   width: 963px / 1920px * 100vw;
   height: 593px / 1920px * 100vw;
 
-  background: url("../images/contacts-man.png") no-repeat center;
+  background: url("../images/contacts-man.png") no-repeat bottom;
   background-size: contain;
 
   transform: translate3d(0, 100%, 0);
@@ -249,7 +249,7 @@ label#fotos__area-error {
 
   .contacts {
     padding-top: 40px;
-    padding-bottom: 80px;
+    padding-bottom: 0;
   }
 
   .contacts__form-container {
@@ -280,6 +280,10 @@ label#fotos__area-error {
   }
 
   .contacts__man {
-    left: 63px / 1920px * 100vw;
+    display: none;
+    left: -123px / 1920px * 100vw;
+
+    width: 1163px / 1920px * 100vw;
+    height: 793px / 1920px * 100vw;
   }
 }
