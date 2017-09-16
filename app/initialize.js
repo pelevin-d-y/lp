@@ -179,6 +179,13 @@ $(document).ready(function() {
       }
     }
   });
+
+  $("a.main-nav__item").click(function () {
+    var elementClick = $(this).attr("href");
+    var destination = $(elementClick).offset().top;
+    $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1000);
+    return false;
+  });
 });
 
 

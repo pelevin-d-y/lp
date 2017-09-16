@@ -10,6 +10,7 @@
 
 .clients__container {
   position: relative;
+  overflow: hidden;
 }
 
 .clients-top-triangle {
@@ -183,7 +184,7 @@
 .clients-btn-prev {
   position: absolute;
   top: 390px;
-  left: -10px;
+  left: 0;
 
   width: 29px;
   height: 61px;
