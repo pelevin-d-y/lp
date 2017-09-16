@@ -37,10 +37,10 @@ $(document).ready(function() {
 
       setTimeout(function() {
         $(nextSlideElement).css('animation-name', '')
-      }, 800);
+      }, 500);
       setTimeout(function() {
         $(currentSlideElement).css('animation-name', '')
-      }, 800);
+      }, 500);
 
       setTimeout
     } else if (nextSlide == lastSlide && currentSlide == 0) {
@@ -50,10 +50,10 @@ $(document).ready(function() {
 
       setTimeout(function() {
         $(nextSlideElement).css('animation-name', '')
-      }, 800);
+      }, 500);
       setTimeout(function() {
         $(currentSlideElement).css('animation-name', '')
-      }, 800);
+      }, 500);
 
     } else if (nextSlide > currentSlide && currentSlide !== lastSlide){
       $(nextSlideElement).css({'animation-name': 'move-next-right'});
@@ -61,10 +61,10 @@ $(document).ready(function() {
 
       setTimeout(function() {
         $(nextSlideElement).css('animation-name', '')
-      }, 800);
+      }, 500);
       setTimeout(function() {
         $(currentSlideElement).css('animation-name', '')
-      }, 800);
+      }, 500);
 
     } else {
       $(nextSlideElement).css({'animation-name': 'move-next-left'});
@@ -72,11 +72,11 @@ $(document).ready(function() {
 
       setTimeout(function() {
         $(nextSlideElement).css('animation-name', '')
-      }, 800);
+      }, 500);
 
       setTimeout(function() {
         $(currentSlideElement).css('animation-name', '')
-      }, 800);
+      }, 500);
     };
 
   });
@@ -224,18 +224,4 @@ $(document).ready(function() {
 
 
 
-
-/*(function () {
-var topLine = document.querySelector('.top-line');
-var pageHeader = document.querySelector('.page-header');
-var pageHeaderHeight = pageHeader.offsetHeight
-
-window.addEventListener('scroll', function() {
-  if (pageHeaderHeight > window.pageYOffset) {
-    topLine.classList.remove('sticky');
-  } else {
-    topLine.classList.add('sticky');
-  }
-})
-})(); */
 

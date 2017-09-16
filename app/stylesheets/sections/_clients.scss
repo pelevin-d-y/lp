@@ -11,6 +11,7 @@
 .clients__container {
   position: relative;
   overflow: hidden;
+  max-width: 1400px;
 }
 
 .clients-top-triangle {
@@ -187,7 +188,7 @@
 .clients-btn-prev {
   position: absolute;
   top: 390px;
-  left: 0;
+  left: 40px;
 
   width: 29px;
   height: 61px;
@@ -201,7 +202,7 @@
 .clients-btn-next {
   position: absolute;
   top: 390px;
-  right: 50px;
+  right: 100px;
 
   width: 29px;
   height: 61px;
@@ -227,20 +228,9 @@
 }
 
 .slick-active {
-
-  //perspective: 1000px;
-  animation-duration: 0.8s, 0.8s, 0.8s;
+  animation-duration: 0.5s, 0.5s, 0.5s;
   animation-fill-mode: forwards;
 }
-
-//.slide-prev {
-//  transform: translateX(-300px) rotateY(-70deg);
-//}
-//
-//.slide-next {
-//  transform: translateX(300px) rotateY(70deg);
-//}
-
 
 
 @keyframes rotate {
@@ -254,7 +244,7 @@
 
 @keyframes move-next-right {
   0% {
-   transform: translateX(600px) rotateY(-40deg) scale(0.5);
+   transform: translateX(600px) rotateY(-70deg) scale(0.5);
 
 
     }
@@ -277,19 +267,19 @@
 
 @keyframes move-next-left {
   0% {
-   transform: translateX(-300px) rotateY(-70deg) scale(0.5);
+   transform: translateX(-600px) rotateY(70deg) scale(0.5);
 
 
     }
   100% {
-    transform: translateX(0) rotateY(0) scale(0.5);
+    transform: translateX(0) rotateY(0) scale(1);
 
   }
 }
 
 @keyframes move-prev-left {
   0% {
-   transform: translateX(0) rotateY(0) scale(0.5);
+   transform: translateX(0) rotateY(0) scale(1);
 
 
     }
@@ -297,3 +287,46 @@
     transform: translateX(600px) rotateY(-70deg) scale(0.5);
   }
 }
+
+
+@media (max-width: 1188px) {
+
+  .clients__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 45px;
+  }
+
+  .clients__slide-foto {
+    position: static;
+    margin: 0 auto;
+  }
+
+  .clients__slide-title {
+     margin-top: 30px;
+    text-align: center;
+  }
+
+  .clients__slide-desc {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left:  auto;
+
+  }
+
+  .clients__slide-paragraph {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .clients-btn-next {
+    right: 40px;
+  }
+}
+
