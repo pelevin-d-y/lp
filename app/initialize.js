@@ -1,7 +1,7 @@
 import $ from "jquery"
 import slick from "slick-carousel"
 import validation from "jquery-validation"
-import OnScreen from 'onscreen';
+import OnScreen from "onscreen"
 
 
 $(document).ready(function() {

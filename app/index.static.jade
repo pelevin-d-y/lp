@@ -13,20 +13,20 @@ body
       a(href="#").header-logo
         | Code story
       .main-nav
-        a(href="#").main-nav__item
+        a(href="#scroll-main").main-nav__item
           | Main
-        a(href="#").main-nav__item
+        a(href="#scroll-about").main-nav__item
           | About
-        a(href="#").main-nav__item
+        a(href="#scroll-services").main-nav__item
           | Services
-        a(href="#").main-nav__item
+        a(href="#scroll-clients").main-nav__item
           | Clients
-        a(href="#").main-nav__item
+        a(href="#scroll-contact").main-nav__item
           | Contact
       .header__tel
         a(href="tel: 8 800 800 800")
           | 8 800 800 800
-  .top-block
+  .top-block(nmae = "scroll-main")#scroll-main
     .container.top-block__container
       .top-block__text-wrapper
         h1.top-block__title
@@ -43,7 +43,7 @@ body
     .top-block__circle
     .top-block__wave
     .top-block__ants
-  .who
+  .who(name = "#scroll-about")#scroll-about
     .who-top-triangle
     .container.who__container
       .who__big-circle
@@ -66,7 +66,7 @@ body
     .who__ants
       .who__ants-container
     .who-bottom-triangle
-  .services
+  .services(name = "scroll-services")#scroll-services
     .container
       h1.services__title
         | Services
@@ -130,7 +130,7 @@ body
       .portfolio__plus
       .portfolio__man
     .portfolio__bottom-triangle
-  .clients
+  .clients(name = "scroll-clients")#scroll-clients
     .clients-top-triangle
     .container.clients__container
       h1.clients__title
@@ -178,7 +178,7 @@ body
     .clients__triangle
     .clients__wave
     .clients__ants
-  .contacts
+  .contacts(name = "scroll-contact")#scroll-contact
     .contacts-top-triangle
     .contacts-man-container
       .container.contacts__container
