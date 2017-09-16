@@ -78,7 +78,6 @@ $(document).ready(function() {
         $(currentSlideElement).css('animation-name', '')
       }, 500);
     };
-
   });
 
 
@@ -112,21 +111,16 @@ $(document).ready(function() {
  $('.top-block__container-animate').css('height', 0);
 
   var topAnimationTimeout = function (element, timeout) {
-  setTimeout(function() {
-      $(element).css('animation-name', 'fadeIn')
-    }, 500 * timeout);
+    var timeout = 0.5 * timeout + 's';
+    $(element).css('animation-delay', timeout)
+    $(element).css('animation-name', 'fadeIn');
 }
-
-  setTimeout(function() {
-      $('.top-block__container-animate').css('height', '0')
-    }, 500);
-
 
   const os = new OnScreen();
 
-  setTimeout(function() {
-    $('.top-block__container-animate').css('height', '0')
-    }, 500);
+
+    $('.top-block__container-animate').css('height', '0');
+    ;
 
   os.on('enter', '.top-block__container-animate', function() {
     topAnimationTimeout('.top-block__man', 1);
@@ -150,13 +144,12 @@ $(document).ready(function() {
   });
 
   os.on('enter', '.services__items', function() {
-    setTimeout(function() {
-    $('.services__foto').css('animation-name', 'zoomIn')
-    }, 100);
 
-    setTimeout(function() {
-    $('.services__item-text-animated').css('height', '0')
-    }, 100);
+    $('.services__foto').css('animation-name', 'zoomIn');
+
+
+    $('.services__item-text-animated').css('height', '0');
+
 
     topAnimationTimeout('.services__ants', 1);
     topAnimationTimeout('.services__triangle', 2);
@@ -168,12 +161,14 @@ $(document).ready(function() {
     topAnimationTimeout('.portfolio__item-2', 2);
     topAnimationTimeout('.portfolio__item-3', 3);
     topAnimationTimeout('.portfolio__item-4', 4);
+     $('.portfolio__man').css('animation-delay', '1.5s');
+     $('.portfolio__man').css('animation-name', 'slideInUpPortfolio');
+    topAnimationTimeout('.portfolio__plus', 4);
+    topAnimationTimeout('.portfolio__square', 5);
   });
 
   os.on('enter', '.portfolio__man', function() {
-    $('.portfolio__man').css('animation-name', 'slideInUpPortfolio');
-    topAnimationTimeout('.portfolio__plus', 1);
-    topAnimationTimeout('.portfolio__square', 2);
+
   });
 
   os.on('enter', '.clients__slider', function() {
