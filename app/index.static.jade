@@ -7,6 +7,11 @@ head
   link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css")
   link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css")
   link(rel="stylesheet" href="stylesheets/app.css")
+  script(src="javascripts/vendor.js")
+  script(src="javascripts/app.js")
+
+  script.
+    require('initialize');
 body
   header.header
     .container
@@ -210,8 +215,3 @@ body
         .popup__circle
           .popup__plus
         .popup__triangle
-  script(src="javascripts/vendor.js")
-  script(src="javascripts/app.js")
-
-  script.
-    require('initialize');
