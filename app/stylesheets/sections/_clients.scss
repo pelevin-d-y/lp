@@ -49,6 +49,9 @@
   background: #efefef;
 
   opacity: 1;
+
+  animation-duration: 1s, 1s, 1s;
+  animation-fill-mode: forwards;
 }
 
 .clients__slide-title {
@@ -220,17 +223,17 @@
 }
 
 .slick-active {
-  animation-duration: 1s, 1s;
+  animation-duration: 1s, 1s, 1s;
   animation-fill-mode: forwards;
 }
 
-.slide-prev {
-  transform: translateX(-300px) rotateY(-70deg);
-}
-
-.slide-next {
-  transform: translateX(300px) rotateY(70deg);
-}
+//.slide-prev {
+//  transform: translateX(-300px) rotateY(-70deg);
+//}
+//
+//.slide-next {
+//  transform: translateX(300px) rotateY(70deg);
+//}
 
 
 
@@ -243,22 +246,47 @@
   }
 }
 
-@keyframes move-next {
+@keyframes move-next-right {
   0% {
    transform: translateX(300px) rotateY(70deg);
 
     }
   100% {
     transform: translateX(0) rotateY(0);
+
   }
 }
 
-@keyframes move-prev {
+@keyframes move-prev-right {
+  0% {
+   transform: translateX(0) rotateY(0);
+
+    }
+  100% {
+    transform: translateX(-600px) rotateY(70deg);
+
+  }
+}
+
+@keyframes move-next-left {
   0% {
    transform: translateX(-300px) rotateY(-70deg);
+
 
     }
   100% {
     transform: translateX(0) rotateY(0);
+
+  }
+}
+
+@keyframes move-prev-left {
+  0% {
+   transform: translateX(0) rotateY(0);
+
+
+    }
+  100% {
+    transform: translateX(600px) rotateY(-70deg);
   }
 }

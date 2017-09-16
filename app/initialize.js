@@ -26,25 +26,59 @@ $(document).ready(function() {
 
     var lastSlide = $('.clients__slider').slick("getSlick").slideCount - 1;
 
-    console.log(currentSlide);
+    console.log(currentSlideElement);
     console.log(lastSlide);
     console.log(currentSlide !== lastSlide);
 
 
     if (nextSlide == 0 && currentSlide !== 1) {
-      $(nextSlideElement).css({'animation-name': 'move-next'});
-      $(currentSlideElement).css({'animation-name': ''});
+      $(nextSlideElement).css({'animation-name': 'move-next-right'});
+      $(currentSlideElement).css({'animation-name': 'move-prev-right'});
+
+      setTimeout(function() {
+        $(nextSlideElement).css('animation-name', '')
+      }, 800);
+      setTimeout(function() {
+        $(currentSlideElement).css('animation-name', '')
+      }, 800);
+
+      setTimeout
     } else if (nextSlide == lastSlide && currentSlide == 0) {
-      console.log("центр");
-      $(nextSlideElement).css({'animation-name': 'move-prev'});
-      $(currentSlideElement).css({'animation-name': ''});
+      console.log('asdasd')
+      $(nextSlideElement).css({'animation-name': 'move-next-left'});
+      $(currentSlideElement).css({'animation-name': ' move-prev-left'});
+
+      setTimeout(function() {
+        $(nextSlideElement).css('animation-name', '')
+      }, 800);
+      setTimeout(function() {
+        $(currentSlideElement).css('animation-name', '')
+      }, 800);
+
     } else if (nextSlide > currentSlide && currentSlide !== lastSlide){
-      $(nextSlideElement).css({'animation-name': 'move-next'});
-      $(currentSlideElement).css({'animation-name': ''});
+      $(nextSlideElement).css({'animation-name': 'move-next-right'});
+      $(currentSlideElement).css({'animation-name': 'move-prev-right'});
+
+      setTimeout(function() {
+        $(nextSlideElement).css('animation-name', '')
+      }, 800);
+      setTimeout(function() {
+        $(currentSlideElement).css('animation-name', '')
+      }, 800);
+
     } else {
-      $(nextSlideElement).css({'animation-name': 'move-prev'});
-      $(currentSlideElement).css({'animation-name': ''});
-    }
+      $(nextSlideElement).css({'animation-name': 'move-next-left'});
+      $(currentSlideElement).css({'animation-name': ' move-prev-left'});
+
+      setTimeout(function() {
+        $(nextSlideElement).css('animation-name', '')
+      }, 800);
+
+      setTimeout(function() {
+        $(currentSlideElement).css('animation-name', '')
+      }, 800);
+    };
+
   });
 
 
