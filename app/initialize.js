@@ -1,5 +1,8 @@
 import $ from "jquery"
 import slick from "slick-carousel"
+import validation from "jquery-validation"
+import scroolly from "jquery.scroolly"
+
 
 $(document).ready(function() {
   $('.clients__slider').slick({

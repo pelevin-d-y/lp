@@ -8,6 +8,29 @@
   padding-bottom: 32vw;
 }
 
+.top-block__text-wrapper {
+  position: relative;
+  max-width: 684px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    transition: 1s;
+
+    background: #191919;
+  }
+}
+
+.top-block__container:hover .top-block__text-wrapper::after  {
+  height: 0;
+}
+
 .top-block__title {
   max-width: 440px;
   width: 100%;
