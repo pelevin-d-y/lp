@@ -7,18 +7,26 @@ head
   link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css")
   link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css")
   link(rel="stylesheet" href="stylesheets/app.css")
+  script(src="javascripts/vendor.js")
+  script(src="javascripts/app.js")
+
+  script.
+    require('initialize');
 body
   header.header
     .container
       a(href="#").header-logo
         | Code story
       .main-nav
+        .main-nav__close
         a(href="#scroll-main").main-nav__item
           | Main
         a(href="#scroll-about").main-nav__item
           | About
         a(href="#scroll-services").main-nav__item
           | Services
+        a(href="#scroll-portfolio").main-nav__item
+          | Portfolio
         a(href="#scroll-clients").main-nav__item
           | Clients
         a(href="#scroll-contact").main-nav__item
@@ -26,7 +34,8 @@ body
       .header__tel
         a(href="tel: 8 800 800 800")
           | 8 800 800 800
-  .top-block(nmae = "scroll-main")#scroll-main
+      .menu-btn
+  .top-block(name = "scroll-main")#scroll-main
     .container.top-block__container
       .top-block__text-wrapper
         h1.top-block__title
@@ -35,7 +44,7 @@ body
           | The websites made by us are a step ahead of time.
           br
           | We develop the high load ngines and services and increase your online sales.
-        a(href="#").top-block__btn.btn.hvr-radial-out
+        a(href="#").top-block__btn.btn.hvr-sweep-to-right
           | Order Now
         .top-block__container-animate
     .top-block__man
@@ -95,34 +104,34 @@ body
               | UI / UX Design
             .services__item-text
               | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-      a(href="#").services__btn.btn.hvr-radial-out
+      a(href="#").services__btn.btn.hvr-sweep-to-right
         | Start
       .services__ants
       .services__triangle
     .services__wave
     .services__bottom-triangle
-  .portfolio
+  .portfolio#scroll-portfolio
     .portfolio__container
       h1.portfolio__title
         | Portfolio
       .portfolio__items
         a(href="#").portfolio__item.portfolio__item-1
           .portfolio__item-border
-        a(href="#").portfolio__item.portfolio__item-2
+        .portfolio__item.portfolio__item-2
           .portfolio__item-border
             .portfolio__item-border-container
               .portfolio__item-title
                 | lEVELS MALL
               .portfolio__item-desk
                 | It is a long established fact that a reader will be distracted by the readable content of a page
-              .portfolio__item-btn
+              a(href="#").portfolio__item-btn
                 | See all
         a(href="#").portfolio__item.portfolio__item-3
           .portfolio__item-border
         a(href="#").portfolio__item.portfolio__item-4
           .portfolio__item-border
             .portfolio__item-logo
-      a(href="#").portfolio__btn.btn.hvr-radial-out
+      a(href="#").portfolio__btn.btn.hvr-sweep-to-right
         | Order now
       .portfolio__wave
       .portfolio__circle
@@ -170,7 +179,7 @@ body
             .clients__slide-paragraph.paragraph
               | Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
       .clients__slider-arrows
-      a(href="#").clients__btn.btn.hvr-radial-out
+      a(href="#").clients__btn.btn.hvr-sweep-to-right
         | Order now
     .clients__big-circle
       .clients__big-circle-container
@@ -194,7 +203,7 @@ body
               input(type="email" name="email" placeholder="E-mail").contacts__form-input
             .contacts__form-textarea-container
               textarea(name="fotos__area" placeholder= "Ваше сообщение").contacts__form-textarea
-            button(type="submit" href="#").btn.contacts__btn.hvr-radial-out
+            button(type="submit" href="#").btn.contacts__btn.hvr-sweep-to-right
               | Start
         .contacts__copyright
           | © codestory 2017
@@ -204,10 +213,10 @@ body
       .contacts__ants
       .contacts__square
       .contacts__triangle
-  .popup.hidden
+  .popup.popup-thanks.hidden
     .overlay
       .popup-container
-        .popup__btn.hvr-radial-out
+        .popup__btn.hvr-sweep-to-right
           .popup__btn-line-1
           .popup__btn-line-2
         .popup__title
@@ -219,8 +228,45 @@ body
         .popup__circle
           .popup__plus
         .popup__triangle
-script(src="javascripts/vendor.js")
-script(src="javascripts/app.js")
-
-script.
-  require('initialize');
+  .popup.popup-form.hidden
+    .overlay
+      .popup__container-form-wrapper
+        .popup__btn.hvr-sweep-to-right
+          .popup__btn-line-1
+          .popup__btn-line-2
+        .popup-container.popup__container-form
+          .popup__title
+            | Order
+          .popup__descr.popup-form__descr
+            | You can leave your contact information and we will contact you for details
+          form(action="#" method="#").contacts__form#popup__form
+            .popup__form-container
+              .popup__form-input-container
+                input(type="text" name="name" placeholder="Name").contacts__form-input
+              .popup__form-input-container
+                input(type="tel" name="phone" placeholder="Phone").contacts__form-input
+              .popup__form-input-container
+                input(type="email" name="email" placeholder="E-mail").contacts__form-input
+              .popup__form-textarea-container
+                textarea(name="fotos__area" placeholder= "Ваше сообщение").contacts__form-textarea
+              button(type="submit" href="#").btn.contacts__btn.hvr-sweep-to-right
+                | Go
+          .popup-form-elements-wrapper
+            .popup-form-ants
+            .popup-form-triangle
+            .popup-form-square
+  .popup.popup-project.hidden
+    .overlay
+      .popup-container.popup-container-project
+        .popup__btn.hvr-sweep-to-right
+          .popup__btn-line-1
+          .popup__btn-line-2
+        .popup__title.popup__title-project
+            | Pacific coast movers
+        .popup__descr.popup-project-descr
+            | Design, Web develop
+        .popup__project-img
+          img(src='images/project.jpg')
+        .popup__btn-container
+          a(href="#").project__btn.btn.hvr-sweep-to-right
+            | Order now

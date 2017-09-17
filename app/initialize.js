@@ -95,20 +95,7 @@ $(document).ready(function() {
     });
   });
 
-  $('.popup__btn').on('click', function() {
-    $('.popup').addClass('hidden');
-
-  });
-
-  $('.overlay').click(function(evt) {
-  if ($(evt.target).closest('.popup-container').length == 0) {
-
-      $('.popup').addClass('hidden');
-      $('html,body').css('overflow','auto');
-    }
-  });
-
- $('.top-block__container-animate').css('height', 0);
+$('.top-block__container-animate').css('height', 0);
 
   var topAnimationTimeout = function (element, timeout) {
     var timeout = 0.5 * timeout + 's';
@@ -209,12 +196,71 @@ $(document).ready(function() {
     }
   });
 
+  $("#popup__form").validate({
+    rules: {
+      name: {
+        required: true
+      },
+      phone: {
+        required: true,
+        digits: true
+      },
+      email: {
+      required: true,
+      email: true
+    },
+      fotos__area: {
+        required: true
+      }
+    }
+  });
+
   $("a.main-nav__item").click(function () {
     var elementClick = $(this).attr("href");
     var destination = $(elementClick).offset().top;
     $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1000);
     return false;
   });
+
+  $('.popup__btn').on('click', function() {
+    $('.popup').addClass('hidden');
+    $('html,body').css('overflow','auto');
+  });
+
+  $('.overlay').click(function(evt) {
+      if ($(evt.target).closest('.popup-container').length == 0) {
+
+      $('.popup').addClass('hidden');
+      $('html,body').css('overflow','auto');
+    }
+  });
+
+  $('.btn:not(.contacts__btn)').on('click', function (evt) {
+    evt.preventDefault();
+    $('.popup-form').removeClass('hidden');
+    $("html,body").css("overflow","hidden");
+  });
+
+  $('.portfolio__item-btn').on('click', function (evt) {
+    evt.preventDefault();
+    $('.popup-project').removeClass('hidden');
+    $("html,body").css("overflow","hidden");
+  });
+
+  $('.project__btn').on('click', function (evt) {
+    $('.popup-project').addClass('hidden');
+    $('.popup.popup-form').removeClass('hidden');
+  });
+
+  $('.menu-btn').on('click', function () {
+    $('.main-nav').addClass('main-nav-open');
+  });
+
+   $('.main-nav__close').on('click', function () {
+     $('.main-nav').removeClass('main-nav-open');
+  });
+
+
 });
 
 
