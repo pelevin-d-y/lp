@@ -4,7 +4,6 @@ import validation from "jquery-validation"
 import OnScreen from "onscreen"
 
 
-
 $(document).ready(function() {
   $('.clients__slider').slick({
     infinite: true,
@@ -273,19 +272,6 @@ $('.top-block__container-animate').css('height', 0);
    $('.main-nav__close').on('click', function () {
      $('.main-nav').removeClass('main-nav-open');
   });
-
-//  $(window).scroll(function() {
-//    var st = $(this). scrollTop();
-//
-//    $('.top-block__triangle').css({
-//      'transform': 'translate(0%,' + st/7 + '%'
-//    });
-//
-//    $('.who__big-circle').css({
-//      'transform': 'translate(0%,' + st/7 + '%'
-//    });
-//
-//  })
 
 });
 
