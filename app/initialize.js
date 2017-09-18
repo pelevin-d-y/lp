@@ -15,20 +15,14 @@ $(document).ready(function() {
     appendArrows: $('.clients__slider-arrows'),
     prevArrow: '<button id="prev" type="button" class="clients-btn-prev"></button>',
     nextArrow: '<button id="next" type="button" class="clients-btn-next"></button>'
-
   })
 
   $('.clients__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-
 
     var nextSlideElement = $('.clients__slide')[nextSlide];
     var currentSlideElement = $('.clients__slide')[currentSlide];
 
     var lastSlide = $('.clients__slider').slick("getSlick").slideCount - 1;
-
-    console.log(currentSlideElement);
-    console.log(lastSlide);
-    console.log(currentSlide !== lastSlide);
 
 
     if (nextSlide == 0 && currentSlide !== 1) {
@@ -103,8 +97,8 @@ $('.top-block__container-animate').css('height', 0);
     $(element).css('animation-name', 'fadeIn');
 }
 
-  const os = new OnScreen();
-
+  const os = new OnScreen({
+   });
 
     $('.top-block__container-animate').css('height', '0');
     ;
@@ -220,7 +214,6 @@ $('.top-block__container-animate').css('height', 0);
       }
     },
   submitHandler: function(form) {
-    console.log('asdas');
     //$('.popup-form').addClass('hidden');
     //$('.popup-thanks').removeClass('hidden');
     //$("html,body").css("overflow","hidden");
@@ -237,6 +230,7 @@ $('.top-block__container-animate').css('height', 0);
 
   $('.popup__btn').on('click', function() {
     $('.popup').addClass('hidden');
+    $('.popup-project').addClass('hidden');
     $('html,body').css('overflow','auto');
   });
 
@@ -244,6 +238,7 @@ $('.top-block__container-animate').css('height', 0);
       if ($(evt.target).closest('.popup-container').length == 0) {
 
       $('.popup').addClass('hidden');
+      $('.popup-project').addClass('hidden')
       $('html,body').css('overflow','auto');
     }
   });
@@ -260,17 +255,20 @@ $('.top-block__container-animate').css('height', 0);
     $("html,body").css("overflow","hidden");
   });
 
-  $('.project__btn').on('click', function (evt) {
-    $('.popup-project').addClass('hidden');
-    $('.popup.popup-form').removeClass('hidden');
-  });
-
   $('.menu-btn').on('click', function () {
     $('.main-nav').addClass('main-nav-open');
   });
 
    $('.main-nav__close').on('click', function () {
      $('.main-nav').removeClass('main-nav-open');
+  });
+
+  $('.project__btn').on('click', function (evt) {
+    evt.preventDefault();
+
+    $('.popup-project').addClass('hidden');
+    console.log('asdasd')
+    $('.popup-form').removeClass("hidden");
   });
 
 });

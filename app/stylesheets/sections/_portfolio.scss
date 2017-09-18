@@ -46,36 +46,28 @@
 }
 
 .portfolio__item-border {
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgba(255, 255, 255, 0);
 
   transition: border-color 0.5s;
 }
 
 .portfolio__item:hover .portfolio__item-border {
   border-color: rgba(255, 255, 255, 1);
+  background-color: #191919;
 }
 
 .portfolio__item-1 {
   background: url(../images/portfolio-item-1.png) no-repeat center;
-  background-size: 110%;
+  background-size: 100%;
 }
 
 .portfolio__item-2 {
   align-items: center;
   padding: 0;
   background: url('../images/portfolio-item-3.png') no-repeat center;
-  background-size: contain;
+  background-size: 110%;
+  background-position: center;
 
-  transition: border 0.5s;
-}
-
-.portfolio__item-2:hover {
-  border: 20px solid transparent;
-  border-image: linear-gradient(to bottom, #c1709d 0%, #9273aa 100%);
-  border-image-slice: 1;
-  background: none;
+  transition: 0.5s;
 }
 
 .portfolio__item-border {
@@ -113,7 +105,7 @@
   transition: 0.5s;
 }
 
-.portfolio__item-2:hover .portfolio__item-title {
+.portfolio__item:hover .portfolio__item-title {
   transform: scale(1);
   opacity: 1;
 }
@@ -136,7 +128,7 @@
   transition: 0.5s;
 }
 
-.portfolio__item-2:hover .portfolio__item-desk {
+.portfolio__item:hover .portfolio__item-desk {
   transform: scale(1);
   opacity: 1;
 }
@@ -162,33 +154,22 @@
   opacity: 0;
 }
 
-.portfolio__item-2:hover .portfolio__item-btn {
+.portfolio__item:hover .portfolio__item-btn {
   transform: scale(1);
   opacity: 1;
 }
 
 .portfolio__item-3 {
   background: url(../images/portfolio-item-2.png) no-repeat center;
-  background-size: 110%;
+  background-size: 100%;
 }
 
 .portfolio__item-4 {
   position: relative;
   background: url(../images/portfolio-item-4.png) no-repeat center;
-  background-size: 110%;
+  background-size: 100%;
 
-  &::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top left, #d4e28e, #2d868c);
-    opacity: 0.8;
-  }
+
 }
 
 .portfolio__item-logo {

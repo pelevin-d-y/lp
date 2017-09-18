@@ -11,9 +11,40 @@
   padding-top: 17px;
 
   border-radius: 27.5px;
-  background-color: #00dbce;
+  background-color: none;
   overflow: hidden;
-
 }
 
+.project__btn {
+  display: inline-block;
+  width: 196px;
+  height: 55px;
 
+  margin-top: 66px;
+
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+  padding-top: 17px;
+
+  border-radius: 27.5px;
+  background-color: none;
+  overflow: hidden;
+}
+
+.top-block__btn {
+  color: #fff;
+}
+
+.portfolio__btn {
+  color: #fff;
+}
+
+.contacts__btn {
+  color: #fff;
+  background: none;
+}
+
+.popup-form__btn {
+  color: #000;
+}
