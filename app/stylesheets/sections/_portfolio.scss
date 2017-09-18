@@ -34,7 +34,7 @@
 
   margin-bottom: 20px / 1920px * 100vw;
 
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
   opacity: 0;
 
@@ -65,6 +65,8 @@
 .portfolio__item-2 {
   align-items: center;
   padding: 0;
+  background: url('../images/portfolio-item-3.png') no-repeat center;
+  background-size: contain;
 
   transition: border 0.5s;
 }
@@ -73,6 +75,7 @@
   border: 20px solid transparent;
   border-image: linear-gradient(to bottom, #c1709d 0%, #9273aa 100%);
   border-image-slice: 1;
+  background: none;
 }
 
 .portfolio__item-border {
@@ -234,7 +237,7 @@
 
   opacity: 0;
   animation-fill-mode: forwards;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
 }
 
 .portfolio__square {
@@ -252,7 +255,7 @@
 
   opacity: 0;
   animation-fill-mode: forwards;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
 }
 
 .portfolio__circle {
