@@ -189,8 +189,24 @@
   margin-bottom: 14px;
 }
 
+.popup__form-input-container label.error {
+  position: absolute;
+  left: 0;
+  top: -13px;
+}
+
 .popup__form-input-container:last-child {
   margin-bottom: 0;
+}
+
+.popup__form-textarea-container {
+  position: relative;
+}
+
+.popup__form-textarea-container label.error {
+  position: absolute;
+  left: 0;
+  top: -13px;
 }
 
 .popup__form-textarea-container .contacts__form-textarea {
@@ -224,6 +240,10 @@
 }
 
 .popup__form-input-container .valid {
+  border-color: #52e16c;
+}
+
+.popup__form-textarea-container .valid {
   border-color: #52e16c;
 }
 

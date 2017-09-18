@@ -195,3 +195,12 @@
     display: none;
   }
 }
+
+@media (max-width: 600px) {
+  .services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+

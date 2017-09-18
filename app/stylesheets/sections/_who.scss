@@ -273,14 +273,30 @@
     }
 
     .who__title {
-      margin-right: auto;
-      margin-left: auto;
-      text-align: center;
+
+      text-align: left;
     }
 
     .who__desc-paragraph {
-      text-align: center;
+      text-align: left;
     }
   }
+
+@media (max-width: 600px) {
+  .who {
+    padding-top: 0;
+  }
+
+  .who__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .who__title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
 
 

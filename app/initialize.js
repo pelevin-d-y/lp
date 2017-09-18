@@ -196,8 +196,9 @@ $('.top-block__container-animate').css('height', 0);
     },
 
   submitHandler: function(form) {
-    $('.popup-thanks').removeClass('hidden');
-    $("html,body").css("overflow","hidden");
+    //$('.popup-thanks').removeClass('hidden');
+    //$("html,body").css("overflow","hidden");
+    //form.submit();
   }
   });
 
@@ -220,9 +221,10 @@ $('.top-block__container-animate').css('height', 0);
     },
   submitHandler: function(form) {
     console.log('asdas');
-    $('.popup-form').addClass('hidden');
-    $('.popup-thanks').removeClass('hidden');
-    $("html,body").css("overflow","hidden");
+    //$('.popup-form').addClass('hidden');
+    //$('.popup-thanks').removeClass('hidden');
+    //$("html,body").css("overflow","hidden");
+    //form.submit();
   }
   });
 

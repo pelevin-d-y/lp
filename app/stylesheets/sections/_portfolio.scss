@@ -343,6 +343,24 @@
     margin-left: 20px;
   }
 
+  @media (max-width: 600px) {
+    .portfolio {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    .portfolio__title {
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    .portfolio__btn {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
 }
 
 

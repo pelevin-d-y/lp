@@ -69,6 +69,14 @@ textarea {
   /* Hack to improve aliasing on mobile/tablet devices */
 }
 
+.popup__btn.hvr-border-fade {
+  box-shadow: inset 0 0 0 4px #fca9ff, 0 0 1px transparent;
+}
+
+.hvr-border-fade:hover, .hvr-border-fade:focus, .hvr-border-fade:active {
+  box-shadow: inset 0 0 0 4px #8392cb, 0 0 1px transparent;
+  /* Hack to improve aliasing on mobile/tablet devices */
+}
 
 @keyframes zoomIn {
   from {
@@ -131,33 +139,32 @@ textarea {
   }
 }
 
-@media (max-width: 500px) {
-  .who-top-triangle {
+@media (max-width: 600px) {
+
+  .portfolio__plus,
+   .portfolio__man,
+  .services__bottom-triangle,
+  .who-bottom-triangle,
+  .who__big-circle,
+  .who__wave,
+  .who__ants,
+  .top-block__triangle,
+  .top-block__circle,
+  .top-block__man,
+  .who-top-triangle,
+  .portfolio__square,
+  .clients__min-circle,
+  .clients-top-triangle,
+  .clients__wave,
+  .clients__triangle,
+  .contacts-top-triangle
+  .clients__ants,
+  .clients__ants,
+  .contacts__plus,
+  .contacts-top-triangle,
+  .contacts__wave,
+  .contacts__ants,
+  .contacts__triangle  {
     display: none;
   }
-
-  .top-block__man {
-    display: none;
-  }
-
-  .top-block__circle {
-    display: none;
-  }
-
-  .top-block__triangle {
-    display: none;
-  }
-
-  .who__ants {
-    display: none;
-  }
-
-  .who__wave {
-    display: none;
-  }
-
-  .who__big-circle {
-    display: none;
-  }
-
 }

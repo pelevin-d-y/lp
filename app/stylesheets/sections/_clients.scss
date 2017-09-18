@@ -330,3 +330,27 @@
     right: 40px;
   }
 }
+
+@media (max-width: 600px) {
+  .clients {
+    padding-bottom: 60px;
+  }
+
+  .clients__slider {
+    margin-top: 50px;
+  }
+
+  .clients-btn-prev {
+    top: 350px;
+  }
+
+  .clients-btn-next {
+    top: 350px;
+  }
+
+  .clients__btn {
+    margin-top: 60px;
+  }
+}
+
+

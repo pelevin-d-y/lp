@@ -103,6 +103,23 @@
   cursor: pointer;
 }
 
+.contacts__form-input-container,
+.contacts__form-textarea-container {
+  position: relative;
+}
+
+
+.contacts__form-input-container label.error{
+  position: absolute;
+  top: -15px;
+}
+
+.contacts__form-textarea-container label.error {
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
 .contacts__copyright {
   margin-top: 330px / 1920px * 100vw;
   padding-bottom: 50px / 1920px * 100vw;
@@ -235,6 +252,12 @@ label#fotos__area-error {
 
 .valid {
   border-color: #52e16c;
+}
+
+@media (max-width: 1028px) {
+  .contacts__wave {
+    display: none;
+  }
 }
 
 @media (max-width: 640px) {

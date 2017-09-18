@@ -126,8 +126,6 @@
 }
 
 
-
-
 @media(max-width: 1024px) {
   .top-block__wave {
     display: none;
@@ -146,5 +144,10 @@
   .top-block__ants {
     display: none;
   }
+}
 
+@media(max-width: 600px) {
+  .top-block__container {
+    padding-bottom: 30vw;
+  }
 }
