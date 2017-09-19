@@ -127,7 +127,7 @@ var scene = new ScrollMagic.Scene({triggerElement: ".who"})
 	.addTo(controller);
 
 var scene = new ScrollMagic.Scene({triggerElement: ".who"})
-	.setClassToggle(".who__card-square", "fadein-animate-1")
+	.setClassToggle(".who__card-square", "fadein-animate-1").re
 	.addTo(controller);
 
 var scene = new ScrollMagic.Scene({triggerElement: ".who"})
