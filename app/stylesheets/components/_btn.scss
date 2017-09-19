@@ -10,10 +10,18 @@
   font-size: 18px;
   padding-top: 17px;
 
+  transition-duration: 0.3s;
+  //border: 2px solid #00dbce;
   border-radius: 27.5px;
-  background-color: none;
+  background-color: #00dbce;
   overflow: hidden;
 }
+
+.btn:hover {
+  background: none;
+  color:#fff;
+}
+
 
 .project__btn {
   display: inline-block;
@@ -28,23 +36,34 @@
   padding-top: 17px;
 
   border-radius: 27.5px;
-  background-color: none;
+  background-color: #00dbce;
   overflow: hidden;
 }
 
-.top-block__btn {
-  color: #fff;
-}
-
-.portfolio__btn {
-  color: #fff;
-}
-
-.contacts__btn {
-  color: #fff;
+.project__btn:hover {
   background: none;
 }
 
-.popup-form__btn {
+.top-block__btn:hover {
+  color: #fff;
+}
+
+.portfolio__btn:hover {
+  color: #fff;
+}
+
+.contacts__btn:hover {
+  color: #fff;
+}
+
+.clients__btn:hover {
+  color: #000;
+}
+
+.services__btn:hover {
+  color: #000;
+}
+
+.popup-form__btn:hover {
   color: #000;
 }

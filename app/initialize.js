@@ -1,7 +1,7 @@
 import $ from "jquery"
+import OnScreen from "onscreen"
 import slick from "slick-carousel"
 import validation from "jquery-validation"
-import OnScreen from "onscreen"
 
 
 $(document).ready(function() {
@@ -93,11 +93,12 @@ $('.top-block__container-animate').css('height', 0);
 
   var topAnimationTimeout = function (element, timeout) {
     var timeout = 0.3 * timeout + 's';
-    $(element).css('animation-delay', timeout)
+    $(element).css('animation-delay', timeout);
     $(element).css('animation-name', 'fadeIn');
 }
 
   const os = new OnScreen({
+
    });
 
     $('.top-block__container-animate').css('height', '0');
@@ -128,7 +129,6 @@ $('.top-block__container-animate').css('height', 0);
 
     $('.services__foto').css('animation-name', 'zoomIn');
 
-
     $('.services__item-text-animated').css('height', '0');
 
 
@@ -138,7 +138,7 @@ $('.top-block__container-animate').css('height', 0);
   });
 
   os.on('enter', '.portfolio__items', function() {
-    topAnimationTimeout('.portfolio__item-1', 1);
+      topAnimationTimeout('.portfolio__item-1', 1);
     topAnimationTimeout('.portfolio__item-2', 2);
     topAnimationTimeout('.portfolio__item-3', 3);
     topAnimationTimeout('.portfolio__item-4', 4);
