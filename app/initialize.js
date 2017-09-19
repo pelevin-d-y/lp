@@ -1,5 +1,5 @@
 import $ from "jquery"
-import OnScreen from "onscreen"
+import ScrollMagic from "scrollmagic"
 import slick from "slick-carousel"
 import validation from "jquery-validation"
 
@@ -97,78 +97,158 @@ $('.top-block__container-animate').css('height', 0);
     $(element).css('animation-name', 'fadeIn');
 }
 
-  const os = new OnScreen({
 
-   });
+  var controller = new ScrollMagic.Controller();
 
-    $('.top-block__container-animate').css('height', '0');
-    ;
+  //top-block
+var scene = new ScrollMagic.Scene({triggerElement: ".top-block"})
+	.setClassToggle(".top-block__man", "fadein-animate-1")
+	.addTo(controller);
 
-  os.on('enter', '.top-block__container-animate', function() {
-    topAnimationTimeout('.top-block__man', 1);
-    topAnimationTimeout('.top-block__wave', 2);
-    topAnimationTimeout('.top-block__circle', 3);
-    topAnimationTimeout('.top-block__ants', 4);
-    topAnimationTimeout('.top-block__triangle', 5);
-  });
+var scene = new ScrollMagic.Scene({triggerElement: ".top-block"})
+	.setClassToggle(".top-block__wave", "fadein-animate-2")
+	.addTo(controller);
 
+var scene = new ScrollMagic.Scene({triggerElement: ".top-block"})
+	.setClassToggle(".top-block__circle", "fadein-animate-3")
+	.addTo(controller);
 
-  os.on('enter', '.who', function() {
-    $('.who__card-woman').css('animation-name', 'slideInUp');
+var scene = new ScrollMagic.Scene({triggerElement: ".top-block"})
+	.setClassToggle(".top-block__ants", "fadein-animate-4")
+	.addTo(controller);
 
-    topAnimationTimeout('.who__card-square', 1);
-    topAnimationTimeout('.who__card-plus', 2);
-    topAnimationTimeout('.who__wave', 3);
-    topAnimationTimeout('.who__big-circle', 4);
-    topAnimationTimeout('.who__triangle', 5);
-    topAnimationTimeout('.who__min-circle', 6);
-    topAnimationTimeout('.who__ants', 7);
-  });
+var scene = new ScrollMagic.Scene({triggerElement: ".top-block"})
+	.setClassToggle(".top-block__triangle", "fadein-animate-5")
+	.addTo(controller);
 
-  os.on('enter', '.services__items', function() {
+  // who-block
+var scene = new ScrollMagic.Scene({triggerElement: ".who"})
+	.setClassToggle(".who__card-woman", "card-woman-animate")
+	.addTo(controller);
 
-    $('.services__foto').css('animation-name', 'zoomIn');
+var scene = new ScrollMagic.Scene({triggerElement: ".who"})
+	.setClassToggle(".who__card-square", "fadein-animate-1")
+	.addTo(controller);
 
-    $('.services__item-text-animated').css('height', '0');
+var scene = new ScrollMagic.Scene({triggerElement: ".who"})
+	.setClassToggle(".who__card-plus", "fadein-animate-2")
+	.addTo(controller);
 
+var scene = new ScrollMagic.Scene({triggerElement: ".who"})
+	.setClassToggle(".who__wave", "fadein-animate-3")
+	.addTo(controller);
 
-    topAnimationTimeout('.services__ants', 1);
-    topAnimationTimeout('.services__triangle', 2);
-    topAnimationTimeout('.services__wave', 3);
-  });
+var scene = new ScrollMagic.Scene({triggerElement: ".who"})
+	.setClassToggle(".who__big-circle", "fadein-animate-4")
+	.addTo(controller);
 
-  os.on('enter', '.portfolio__items', function() {
-      topAnimationTimeout('.portfolio__item-1', 1);
-    topAnimationTimeout('.portfolio__item-2', 2);
-    topAnimationTimeout('.portfolio__item-3', 3);
-    topAnimationTimeout('.portfolio__item-4', 4);
-     $('.portfolio__man').css('animation-delay', '1.5s');
-     $('.portfolio__man').css('animation-name', 'slideInUpPortfolio');
-    topAnimationTimeout('.portfolio__plus', 4);
-    topAnimationTimeout('.portfolio__square', 5);
-  });
+var scene = new ScrollMagic.Scene({triggerElement: ".who"})
+	.setClassToggle(".who__triangle", "fadein-animate-5")
+	.addTo(controller);
 
-  os.on('enter', '.portfolio__man', function() {
+var scene = new ScrollMagic.Scene({triggerElement: ".who"})
+	.setClassToggle(".who__min-circle", "fadein-animate-6")
+	.addTo(controller);
 
-  });
+var scene = new ScrollMagic.Scene({triggerElement: ".who"})
+	.setClassToggle(".who__ants", "fadein-animate-7")
+	.addTo(controller);
 
-  os.on('enter', '.clients__slider', function() {
-    topAnimationTimeout('.clients__big-circle', 1);
-    topAnimationTimeout('.clients__min-circle', 2);
-    topAnimationTimeout('.clients__wave', 3);
-    topAnimationTimeout('.clients__triangle', 4);
-    topAnimationTimeout('.clients__ants', 5);
-  });
+  // services-block
+var scene = new ScrollMagic.Scene({triggerElement: ".services"})
+	.setClassToggle(".services__foto", "services-foto-animate")
+	.addTo(controller);
 
-  os.on('enter', '.contacts', function() {
-    $('.contacts__man').css('animation-name', 'slideInUpPortfolio');
+var scene = new ScrollMagic.Scene({triggerElement: ".services"})
+	.setClassToggle(".services__item-text-animated", "services-foto-text-animated")
+	.addTo(controller);
 
-    topAnimationTimeout('.contacts__square', 1);
-    topAnimationTimeout('.contacts__wave', 2);
-    topAnimationTimeout('.contacts__ants', 3);
-    topAnimationTimeout('.contacts__plus', 4);
-    topAnimationTimeout('.contacts__triangle', 5);
-  });
+var scene = new ScrollMagic.Scene({triggerElement: ".services"})
+	.setClassToggle(".services__ants", "fadein-animate-2")
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".services"})
+	.setClassToggle(".services__triangle", "fadein-animate-3")
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".services"})
+	.setClassToggle(".services__wave", "fadein-animate-4")
+	.addTo(controller);
+
+  // portfolio-block
+var scene = new ScrollMagic.Scene({triggerElement: ".portfolio"})
+	.setClassToggle(".portfolio__item-1", "fadein-animate-1")
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".portfolio"})
+	.setClassToggle(".portfolio__item-2", "fadein-animate-2")
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".portfolio"})
+	.setClassToggle(".portfolio__item-3", "fadein-animate-3")
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".portfolio"})
+	.setClassToggle(".portfolio__item-4", "fadein-animate-4")
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".portfolio"})
+	.setClassToggle(".portfolio__man", "portfolio-man-animated")
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".portfolio"})
+	.setClassToggle(".portfolio__plus", "fadein-animate-5")
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".portfolio"})
+	.setClassToggle(".portfolio__square", "fadein-animate-6")
+	.addTo(controller);
+
+  //clients-block
+var scene = new ScrollMagic.Scene({triggerElement: ".clients"})
+	.setClassToggle(".clients__big-circle", "fadein-animate-1")
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".clients"})
+	.setClassToggle(".clients__min-circle", "fadein-animate-2")
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".clients"})
+	.setClassToggle(".clients__wave", "fadein-animate-3")
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".clients"})
+	.setClassToggle(".clients__triangle", "fadein-animate-4")
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".clients"})
+	.setClassToggle(".clients__ants", "fadein-animate-5")
+	.addTo(controller);
+
+  //contacts-block
+var scene = new ScrollMagic.Scene({triggerElement: ".contacts"})
+	.setClassToggle(".contacts__man", "contacts-block-man-animated")
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".contacts"})
+	.setClassToggle(".contacts__square", "fadein-animate-1")
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".contacts"})
+	.setClassToggle(".contacts__wave", "fadein-animate-2")
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".contacts"})
+	.setClassToggle(".contacts__ants", "fadein-animate-3")
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".contacts"})
+	.setClassToggle(".contacts__plus", "fadein-animate-4")
+	.addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: ".contacts"})
+	.setClassToggle(".contacts__triangle", "fadein-animate-5")
+	.addTo(controller);
 
 
   $("#contacts__form").validate({
